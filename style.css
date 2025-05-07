@@ -19,14 +19,7 @@
     --light-gray-color: #F3F3F3;
     --site-max-width: 1300px;
 }
-.darkmode{
-    --primary-color: #3a435d;
-    --secondary-color: #fff;
-    --dark-color: #252525;
-    --white-color: #070b1d;
-    --light-gray-color: #101425;
-    --site-max-width: 1300px;
-}
+
 html {
     scroll-behavior: smooth;
 }
@@ -45,20 +38,8 @@ body {
     backdrop-filter: blur(5px);
     transition: 0.1s ease;
 }
-#progresso{
-    background-color: #4CAF4F;
-    position: fixed;
-    bottom: 20px;
-    right: 10px;
-    height: 70px;
-    width: 70px;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
-    cursor: pointer;
 
-}
+
 .cardVerde {
     display: flex;
     align-items: center;
@@ -145,178 +126,6 @@ body {
     width: 100%;
     height: auto;
   }
-#value-progresso{
-    display: block;
-    height: calc(100% - 15px);
-    width:  calc(100% - 15px);
-    background-color: var(--light-gray-color);
-    border-radius: 50%;
-    display: grid;
-    place-items: center;
-    font-size: 35px;
-    color: #4CAF4F;    
-}
-.mostrar-login .blur-background{
-    opacity: 1;
-    pointer-events: auto;
-
-}
-
-.login-form{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    max-width: 720px;
-    width: 100%;
-    opacity: 0;
-   pointer-events: none;
-    background-color: #fff;
-    border: 2px solid #fff;
-    transform: translate(-50%, -50%);
-}
-.login-form .form-box{
-    display: flex;
-}
-.mostrar-login .login-form{
-    opacity: 1;
-    pointer-events: auto;
-    transform: translate(-50%, -50%);
-    transition: transform 0.3s ease, opacity 0.1s;
-
-}
-
-.btn-default {
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--verde);
-    border-radius: 12px;
-    padding: 10px 14px;
-    font-weight: 600;
-    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
-
-}
-.form-box .form-detalhes{
-    max-width: 330px;
-    width: 100%;
-    display: flex;
-    text-align: center  ;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
-}
-
-.form-box h2{
-    text-align: center;
-    margin-bottom: 30px;
-    
-}
-.form-box .form-content{
-    padding: 35px;
-    width: 100%;
-
-}
-form .input-entrada{
-    height: 50px;
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
-}
-form .input-entrada input{
-    width: 100%;
-    height: 100%;
-    outline: none;
-    padding: 0 15px;
-    font-size: 0.95rem;
-    border-radius: 3px;
-    border: 1px solid #717171;
-
-}
-.input-entrada input:is(:focus, :valid){
-    padding: 16px 15px 0;
-
-}
-
-form .input-entrada label{
-    position: absolute;
-    top: 50%;
-    left: 15px;
-    color: #717171;
-    pointer-events: none;
-    transform: translateY(-50%);
-    transition: 0.2s ease;
-}
-.input-entrada input:focus{
-    color: #4CAF4F;    
-}
-.input-entrada input:is(:focus, :valid) ~ label{
-    color: #4CAF4F;    
-    font-size: 0.75rem;
-    transform: translateY(-120%);
-}
-.form-box a{
-    color: #4CAF4F;    
-    text-decoration: none;  
-
-}
-.form-box a:hover{
-    text-decoration: underline;
-}
-
-.form-box :where(.esquecer-senha, .politica-texto){
-    display: inline-flex;
-    margin-top: 14px;
-    font-size: 0.95rem;
-    
-}
-form button{
-    width: 100%;
-    outline: none;
-    border: none;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 14px 0;
-    border-radius: 3px;
-    margin: 25px 0;
-    cursor: pointer;
-    color: var(--light-gray-color);
-    background-color:#4CAF4F;
-    transition: 0.2s ease;
-}
-form button:hover{
-    background-color:#6fcc72;
-}
-.form-box .bottom-link{
-    text-align: center;
-
-}
-.login-form .fechar-btn{
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    color: #4CAF4F;;
-    cursor: pointer;
-}
-.login-form .registrar,
-.login-form.mostrar-registrar .login{
-    display: none;
-}
-.login-form.mostrar-registrar .registrar{
-    display: flex;
-}
-.registrar .politica-texto{
-    display: flex;
-    align-items: center;
-    
-}
-.registrar .politica-texto input{
-    width: 14px;
-    height: 14px;
-    margin-right: 7px;
-}
-
 a {
     text-decoration: none;
 }
@@ -663,69 +472,7 @@ label .close_btn {
     width: 100%;
 }
 
-/* Services Section */
-/* .card {
-    display: flex;
-    justify-content: center;
-    width: 350px;
-    height: 300px;
-    position: relative;
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0px 35px 80px rgba(0, 0, 0, 0.15);
-    transition: 0.5s;
-}
 
-.card:hover {
-    height: 400px;
-}
-
-.card .img-box {
-    position: absolute;
-    width: 250px;
-    height: auto;
-    top: 0px;
-    transition: 0.5s;
-}
-
-.card:hover .img-box {
-    top: -100px;
-    scale: 0.75;
-}
-
-.card .img-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card .content {
-    display: flex;
-    color: #000;
-    flex-direction: column;
-    gap: 18px;
-    position: absolute;
-    top: 250px;
-    width: 100%;
-    padding: 0px 30px;
-    text-align: center;
-    height: 30px;
-    overflow: hidden;
-    transition: 0.5s;
-}
-
-.card:hover .content {
-    top: 130px;
-    height: 250px;
-}
-
-.card .read-more {
-   background: #4CAF4F;
-   padding: 12px;
-   color: #fff;
-   text-decoration: none;
-   border-radius: 8px;
-} */
 .services {
     background: var(--dark-color);
     color: var(--white-color);
@@ -998,38 +745,7 @@ footer {
     color: var(--secondary-color);
 }
 
-/* Avaliacao */
-/* #testimonials {
-    min-height: 100vh;
-    background-color: #f9fafb;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 60px;
-    padding: 32px 8%;
-}
 
-#testimonials_header {
-    text-align: center;
-}
-
-#testimonials_header h1 {
-    font-size: 18px;
-    font-weight: 600;
-    color: #4CAF4F;    
-}
-
-#testimonials_header h2 {
-    color: #111928;
-    font-size: 40px;
-}
-
-#testimonials_header p {
-    color: #637381;
-    font-size: 16px;
-    max-width: 485px;
-} */
 
 #testimonials {
     min-height: calc(100vh - 92px);
