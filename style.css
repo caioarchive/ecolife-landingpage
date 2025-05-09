@@ -23,7 +23,12 @@
 html {
     scroll-behavior: smooth;
 }
-
+.btn-default{
+    background-color: var(--verde);
+    padding: 10px;
+    border-radius: 8px;
+    color: var(--white-color);
+}
 body {
     background-color: var(--white-color);
 }
